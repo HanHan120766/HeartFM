@@ -1,0 +1,45 @@
+.container {
+	height: 100%;
+}
+.diantai_scroll {
+	width: 100%;
+	background-color: #fff;
+}
+.scroll_list {
+	background-color: #fff;
+	width: 100%;
+}
+.list_cell {
+	height: 170rpx;
+	width: 725rpx;
+	margin-left: 25rpx;
+	border-bottom: #eaeaea solid 1rpx;
+}
+.cell_img {
+	margin-top: 25rpx;
+	height: 120rpx;
+	width: 120rpx;
+	float: left;
+}
+.cell_text {
+	width: 550rpx;
+	height: 120rpx;
+	margin: 16rpx 0 0 25rpx;
+	float: left;
+}
+.text_title {
+	font-size: 28rpx;
+	color: #353535;
+	font-weight: bolder;
+}
+
+.text_speak {
+	font-size: 28rpx;
+	color: #666;
+	margin-top: 10rpx;
+}
+
+
+
+
+

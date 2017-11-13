@@ -1,0 +1,22 @@
+<!--index.wxml-->
+<view class="container" style="width: 100%; height: {{viewHeight}}px; overflow: hidden;">
+
+	<image class="playImg" src="{{dataSource.cover}}" style="height: {{viewHeight}}px; width: {{viewHeight}}px; position: fixed; left: -{{(viewHeight-viewWidth)/2}}px; right: -{{(viewHeight-viewWidth)/2}}px"></image>
+	<image
+      src="{{dataSource.cover}}"
+      id="picUrl"
+      style="{{transform}}"
+      catchtap="isPlayMusic"
+    ></image>
+    <progress class="progress" stroke-width="2" activeColor="#ddd" backgroundColor="#fff" percent="{{percent}}"></progress>
+    <slider class="slider" min="0" max="100" value="{{sliderValue}}" activeColor="#b42a2a" backgroundColor="transparent" bindchange="changeSliderValue"></slider>
+    <text class="left_time">{{leftTime+'s'}}</text>
+    <text class="right_time">{{rightTime+'s'}}</text>
+
+		<view class="zhubo_info" data-id="{{dataSource.diantai.id}}">
+			<image class="zhubo_img" src="{{dataSource.diantai.cover}}"></image>
+			<view class="zhubo_title">{{dataSource.diantai.title}}</view>
+			<view class="zhubo_content">{{dataSource.diantai.content}}</view>
+		</view>
+
+</view>

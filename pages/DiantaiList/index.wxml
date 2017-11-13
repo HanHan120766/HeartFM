@@ -1,0 +1,17 @@
+<!--index.wxml-->
+<view class="container">
+	
+	<scroll-view scroll-y="true" class="diantai_scroll" bindscrolltolower="getMoreData" enable-back-to-top="true" style="height: {{scrollHeight}}px">
+		<view class="scroll_list">
+			<view class="list_cell" wx:for="{{dataSource}}" catchtap="gotoPlay" data-id="{{item.id}}">
+				<image class="cell_img" src="{{item.cover}}"></image>
+				<view class="cell_text">
+					<text class="text_title clearfix">{{item.title}}</text>
+					<text class="text_speak clearfix">{{item.is_teacher? '心理师 '+item.speak : '主播 ' + item.speak}}</text>
+					<text class="text_speak">{{'收听量 ' + item.viewnum}}</text>
+				</view>
+			</view>
+		</view>
+	</scroll-view>
+
+</view>

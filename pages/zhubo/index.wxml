@@ -1,0 +1,43 @@
+<!--index.wxml-->
+<view class="container">
+	<scroll-view scroll-y="true" class="diantai_scroll" bindscrolltolower="getMoreData" enable-back-to-top="true" style="height: {{scrollHeight}}px">
+		<swiper indicator-dots="{{indicatorDots}}" class="slideI_0"
+		autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" indicator-active-color="#f5f5f5" indicator-color="#999" circular="{{circular}}">
+			<block wx:for="{{dataSource.tuijian}}">
+				<swiper-item catchtap="onSwiper" data-type="{{item.type}}" data-id="{{item.id}}">
+					<image src="{{item.cover}}" class="slide-image" width="355" height="150"/>
+				</swiper-item>
+			</block>
+		</swiper>
+		<view class="diantai">
+			<view class="title">
+				<view class="title_left" style="background-color: #56c099"></view>
+				<text class="title_name">新晋主播</text>
+			</view>
+			<scroll-view class="scroll_diantai" scroll-x="true">
+				<view class="diantai_cell" wx:for="{{dataSource.newlist}}" catchtap="gotoZhubo" data-id="{{item.id}}">
+					<image src="{{item.cover}}" class="diantai_cell_img"/>
+					<text class="diantai_text">{{item.title}}</text>
+				</view>
+			</scroll-view>
+			<view class="moreInfo" catchtap="gotoZhuboList">
+				更多主播
+				<image src="../../images/more111@2x.png" class="rightjiantou"/>
+			</view>
+		</view>
+
+		<view class="hotZhubo">
+			<view class="title">
+				<view class="title_left"></view>
+				<text class="title_name">热门主播</text>
+			</view>
+			<view class="hotZhubo_list" wx:for="{{hotZhuboList}}" catchtap="gotoZhubo" data-id="{{item.id}}">
+				<image class="zhubo_img" src="{{item.cover}}"></image>
+				<view class="zhubo_name">{{item.title}}</view>
+				<view class="zhubo_diantaiNum">节目 {{item.fmnum}}</view>
+				<view class="zhubo_content">{{item.content}}</view>
+			</view>
+		</view>
+	</scroll-view>
+
+</view>

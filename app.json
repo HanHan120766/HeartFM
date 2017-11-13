@@ -1,0 +1,44 @@
+{
+  "pages":[
+
+    "pages/home/index",
+    "pages/discover/index",
+    "pages/zhuboList/index",
+    "pages/zhubo/index",
+    "pages/zhuboDetail/index",
+    "pages/DiantaiList/index",
+    "pages/HeartPlay/index"
+
+  ],
+  "window":{
+    "backgroundTextStyle":"#white",
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "听出心声",
+    "navigationBarBackgroundColor": "white",
+    "backgroundColor": "#f5f5f5",
+    "enablePullDownRefresh": false
+  },
+  "tabBar": {
+    "color": "#aaa",
+    "selectedColor": "#fff",
+    "borderStyle": "#fff",
+    "backgroundColor": "#2a2d2f",
+    "list": [{
+      "pagePath": "pages/home/index",
+      "iconPath": "images/nav_index.png",
+      "selectedIconPath": "images/nav_index_act.png",
+      "text": "首页"
+    }, {
+      "pagePath": "pages/discover/index",
+      "iconPath": "images/nav_find.png",
+      "selectedIconPath": "images/nav_find_act.png",
+      "text": "发现"
+    }, {
+      "pagePath": "pages/zhubo/index",
+      "iconPath": "images/nav_my.png",
+      "selectedIconPath": "images/nav_my_act.png",
+      "text": "主播"
+    }]
+  },
+  "debug": false
+}

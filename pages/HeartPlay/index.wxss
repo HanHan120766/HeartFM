@@ -1,0 +1,79 @@
+.container {
+	position: relative;
+}
+.playImg {
+
+	opacity:0.3;
+	-webkit-filter: blur(10px);
+}
+#picUrl {
+	position: fixed;
+	top: 150rpx;
+	left: 100rpx;
+	width: 550rpx;
+	height: 550rpx;
+	border-radius: 50%;
+	z-index: 100;
+}
+.progress {
+	width: 500rpx;
+	position: fixed;
+	top: 840rpx;
+	left: 125rpx;
+	/*margin: 0 125rpx;*/
+}
+.slider {
+	width: 500rpx;
+	position: fixed;
+	top: 805rpx;
+	left: 88rpx;
+	/*margin: 0 125rpx;*/
+}
+.left_time {
+	font-size: 28rpx;
+	color: #555;
+	position: fixed;
+	top: 820rpx;
+	left: 30rpx;
+}
+.right_time {
+	font-size: 28rpx;
+	color: #555;
+	position: fixed;
+	top: 820rpx;
+	right: 30rpx;
+}
+.zhubo_info {
+	width: 100%;
+	height: 140rpx;
+	position: fixed;
+	bottom: 0;
+	background-color: rgba(256,256,256,0.5);
+}
+.zhubo_img {
+	margin: 20rpx 30rpx 0 30rpx;
+	width: 100rpx;
+	height: 100rpx;
+	border-radius: 50%;
+	border: 3rpx #fff solid;
+	float: left;
+}
+.zhubo_title {
+	font-family: PingFangSC-Regular;
+  color: #333;
+  font-size: 36rpx;
+  width: 100%;
+  padding-left: 30rpx;
+	padding-top: 20rpx;
+}
+.zhubo_content {
+	font-family: PingFangSC-Light;
+  color: #666;
+  font-size: 28rpx;
+  width: 100%;
+	width: 560rpx;
+	height: 40rpx;
+	overflow: hidden;
+  text-overflow:ellipsis;
+  white-space:nowrap;
+}

@@ -1,0 +1,21 @@
+<view class="container">
+  <swiper indicator-dots="{{indicatorDots}}" class="slideI_0"
+	autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" indicator-active-color="#f5f5f5" indicator-color="#999" circular="{{circular}}">
+		<block wx:for="{{dataSource}}">
+			<swiper-item catchtap="onSwiper" data-title="{{item.title}}">
+				<image src="{{item.cover}}" class="slide-image" width="355" height="150"/>
+			</swiper-item>
+		</block>
+	</swiper>
+
+  <view class="block" wx:for="{{discoverData}}" wx:for-item="items">
+    <view class="block_title">{{items.title}}</view>
+    <view class="block_content">
+      <view class="content" wx:for="{{items.content}}" catchtap="gotoList" data-name="{{item.name}}">
+        <image class="content_img" src="{{item.img}}"></image>
+        <view class="content_name">{{item.name}}</view>
+      </view>
+    </view>
+  </view>
+
+</view>

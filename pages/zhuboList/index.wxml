@@ -1,0 +1,15 @@
+<!--index.wxml-->
+<view class="container">
+	<scroll-view scroll-y="true" class="diantai_scroll" bindscrolltolower="getMoreData" enable-back-to-top="true" style="height: {{scrollHeight}}px">
+
+		<view class="hotZhubo">
+			<view class="hotZhubo_list" wx:for="{{hotZhuboList}}" catchtap="gotoZhubo" data-id="{{item.id}}">
+				<image class="zhubo_img" src="{{item.cover}}"></image>
+				<view class="zhubo_name">{{item.title}}</view>
+				<view class="zhubo_diantaiNum">节目 {{item.fmnum}}</view>
+				<view class="zhubo_content">{{item.content}}</view>
+			</view>
+		</view>
+	</scroll-view>
+
+</view>

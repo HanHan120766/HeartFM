@@ -1,0 +1,26 @@
+<view class="contains">
+  <scroll-view scroll-y="true" class="diantai_scroll" bindscrolltolower="getMoreData" enable-back-to-top="true" style="height: {{scrollHeight}}px">
+    <view class="header">
+      <image class="header_cover" src="{{dataSource.cover}}"></image>
+      <view class="header_title">{{dataSource.title}}</view>
+      <view class="header_info">收听 {{dataSource.viewnum}} | 关注 {{dataSource.favnum}}</view>
+    </view>
+    <view class="zhubo_info">
+      <image class="left_img" src="https://static.shengri.cn/uploads/xydd/web/shenfenPic.png"></image>
+      <view class="right_title">{{dataSource.content}}</view>
+    </view>
+
+    <view class="diantai_list">
+      <view class="title">
+        <view class="title_left"></view>
+        <text class="title_name">全部节目 （{{dataSource.fmnum}}）</text>
+      </view>
+      <view class="list_detail" wx:for="{{dataList}}" catchtap="gotoPlay" data-id="{{item.id}}">
+        <image class="zhubo_img" src="{{item.cover}}"></image>
+        <view class="zhubo_title">{{item.title}}</view>
+        <view class="zhubo_viewNum">收听 {{item.viewnum}}</view>
+      </view>
+    </view>
+  </scroll-view>
+
+</view>

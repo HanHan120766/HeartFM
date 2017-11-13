@@ -1,0 +1,52 @@
+.container {
+  overflow: hidden;
+}
+.diantai_scroll {
+	width: 100%;
+	background-color: #fff;
+}
+.slideI_0 {
+  height: 500rpx;
+  width: 100%;
+}
+.slideI_0 .slide-image {
+    width: 100%;
+    height: 100%;
+}
+.block {
+  width: 100%;
+  margin-top: 10rpx;
+}
+.block_title {
+  font-family: PingFangSC-Regular;
+  color: #333;
+  font-size: 36rpx;
+  width: 100%;
+  padding-left: 30rpx;
+  line-height: 80rpx;
+}
+.block_content {
+  width: 100%;
+  overflow: hidden;
+}
+.content {
+  width: 248rpx;
+  height: 248rpx;
+  background-color: #fff;
+  float:left;
+  margin-right: 3rpx;
+  margin-bottom: 3rpx;
+  list-style:none;
+}
+.content_img {
+  width: 60rpx;
+  height: 60rpx;
+  margin: 60rpx 94rpx 0;
+}
+.content_name {
+  font-family: PingFangSC-Regular;
+  color: #333;
+  font-size: 28rpx;
+  width: 100%;
+  text-align: center;
+}
